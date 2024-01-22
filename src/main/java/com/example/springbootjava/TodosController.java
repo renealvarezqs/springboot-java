@@ -17,9 +17,9 @@ public class TodosController {
     
     @GetMapping("/")
     public String home(Model model) {
-        var allTodos = todoRepository.findAll();
+        //var allTodos = todoRepository.findAll();
         model.addAttribute("title", "Welcome to Spring Boot on Railway!");
-        model.addAttribute("todos", allTodos);
+        //model.addAttribute("todos", allTodos);
         return "home";
     }
     
